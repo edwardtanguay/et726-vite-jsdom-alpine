@@ -8,7 +8,7 @@ document.querySelector('#root').innerHTML = /*html*/ `
 
   ${Header()}
 	<section x-show="language === 'English'">
-		<h2>English:</h2>
+		<h2 class="text-red-600">English:</h2>
 
     <h3>Workshop Title: Introduction to Machine Learning with Python</h3>
 

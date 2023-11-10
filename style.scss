@@ -1,9 +1,4 @@
-$mainColor: purple;
-
-body {
-	background-color: #ccc;
-	h1 {
-		color: $mainColor;
-	}
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
