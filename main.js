@@ -1,18 +1,12 @@
+import { Header } from './components/Header';
 import './style.css'
 
 const language = 'German';
 
 document.querySelector('#root').innerHTML = /*html*/ `
 <div x-data="{language: 'English'}">
-	<h1 x-show="language === 'English'">Alpine German/English Demo</h1>	
-	<h1 x-show="language === 'German'">Alpine Deutsch/Englisch Demonstration</h1>	
-	<h1 x-show="language === 'Chinese'">高山德语/英语示范</h1>	
-	<button @click="language = language === 'English' ? 'German' : language === 'German' ? 'Chinese' : 'English'"><span x-text="language"></span></button>
 
-	<p x-show="language === 'English'">Welcome to this site.</p>
-	<p x-show="language === 'German'">Willkommen zu dieser Site.</p>
-	<p x-show="language === 'Chinese'">欢迎来到本网站。</p>
-	<hr/>
+  ${Header()}
 	<section x-show="language === 'English'">
 		<h2>English:</h2>
 
@@ -157,6 +151,5 @@ document.querySelector('#root').innerHTML = /*html*/ `
         <li>携带笔记本电脑进行实际练习</li>
     </ul>
 </section>
-
 </div>
 `
