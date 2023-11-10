@@ -1,2 +1,3 @@
 - x set up vite jsdom site
-- .. minimize the site
+- x minimize the site
+- .. bring in three-language site
